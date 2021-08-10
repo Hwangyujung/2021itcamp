@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<title>7조</title>                                      <!-- 1. 제목 수정-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="">
+<link rel="shortcut icon" href="icon7.ico">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+                                                          /*2. 이미지 수정(가로 이미지 사용) */
+
+.bgimg-1 {
+    background-image: url("https://img.marieclairekorea.com/2021/04/mck_60781fb708501-scaled.jpg");
+    min-height: 100%;
+}
+
+                                                         /*2. 이미지 수정(가로 이미지 사용) */
+.bgim-2  {
+    background-image: url("")                    
+}
+
+                                                         /*2. 이미지 수정(가로 이미지 사용) */
+.bgimg-3 {data:image/jpeg;base64,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
+    background-image: url("");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-padding-large {width : 150px;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>                                                               <!-- 3. 메뉴수정 -->
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#link" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LINK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->                                     <!-- 3. 메뉴수정 -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#link" class="w3-bar-item w3-button" onclick="toggleFunction()">LINK</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+                                                                       <!-- 4. 대문 수정 -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+      브레이브 걸스 <span class="w3-hide-small"></span>  </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->                                     <!-- 5. 프로필 수정 -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT Yujung</h3>
+  <p class="w3-center"><em>Nice to meet you</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>유정</b></p><br><!-- 6. 프로필 이미지 -->
+      <img src=""
+      class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+                                                                       <!-- 7. 자기소개  -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p> 이름은 유정 입니다. </p>
+        <p>브레이브걸스 멤버입니다.</p>
+    </div>
+  </div>
+                                                                       <!-- 8. 그래프 수정 -->
+  <p class="w3-large w3-center w3-padding-16">My favorite:</p>
+  <p class="w3-wide">Singing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide">Dancing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide">Conversation</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Link</span>
+  </div>
+</div>
+
+<!-- Container (link Section) -->
+                                                                        <!-- 9. 강좌 소개 -->
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">LINK </h3>
+  <p class="w3-center"><em>링크<br> </em></p><br>
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <a href="https://hackertyper.net/" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">소프트웨어과</button></a>
+    <a href="https://youtu.be/gHQkDjfGsN0" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">웹솔루션과</button></a>
+    <a href="https://www.youtube.com/watch?v=JmywKim-YQA" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">디자인과1</button></a>
+    <a href="https://www.instagram.com/mirim_ddd/?hl=ko" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">디자인과2</button></a>
+    <a href="https://www.e-mirim.hs.kr/main.do" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">미림홈페이지</button></a>
+    <a href="start.txt"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">START</button></a>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+                                                                                <!-- 10. 본인 인적사항 수정!!! -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> SEOUL, KR<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone :? <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ?<br>
+        <i class="fa fa-comment fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kakao Talk : ?<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<!-- Add Google Maps -->                                                        <!-- 11. 구글맵 수정 부분!!! -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(37.4665516, 126.932908);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcPf9E3ib0x4VS321Hm6Pz4pSxLTzOvrY&callback=myMap"></script>
+
+</body>
+</html>
